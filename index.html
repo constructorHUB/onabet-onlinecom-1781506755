@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="./index.js"></script>
+    <script src="./common.js"></script>
+
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+    <link rel="preload" as="image" href="_assets/images/1781505822-logo.svg" fetchpriority="high">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="theme-color" content="">
+    <title>Onabet Brazil – Official Casino and Sports Betting Experience</title>
+    <meta name="description"
+          content="Join Onabet and explore a complete entertainment platform featuring casino games, live dealer action, sports betting, secure payments, mobile access, and a seamless gaming experience designed for Brazilian players.">
+    <link rel="canonical" href="https://onabet-online.com">
+    <meta property="og:title" content="Onabet Brazil – Official Casino and Sports Betting Experience">
+    <meta property="og:description"
+          content="Join Onabet and explore a complete entertainment platform featuring casino games, live dealer action, sports betting, secure payments, mobile access, and a seamless gaming experience designed for Brazilian players.">
+    <meta property="og:url" content="https://onabet-online.com">
+    <meta property="og:site_name" content="Onabet Brazil – Official Casino and Sports Betting Experience">
+    <meta property="og:locale" content="en">
+    <meta property="og:image" content="_assets/images/1781505813-main.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="onabet-online.com">
+    <meta name="twitter:title" content="Onabet Brazil – Official Casino and Sports Betting Experience">
+    <meta name="twitter:description"
+          content="Join Onabet and explore a complete entertainment platform featuring casino games, live dealer action, sports betting, secure payments, mobile access, and a seamless gaming experience designed for Brazilian players.">
+    <meta name="twitter:image" content="_assets/images/1781505813-main.webp">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+    <link rel="icon" href="_assets/images/1781505816-favicon.svg" type="image/x-icon" sizes="16x16">
+    <meta name="language" content="en">
+    <link rel="apple-touch-icon" href="_assets/images/1781505801-favicon.svg" sizes="96x96">
+    <link rel="icon" href="_assets/images/1781505801-favicon.svg" type="image/webp" sizes="192x192">
+
+    <link rel="preload" href="_assets/images/1781505850-main.webp" as="image" fetchpriority="high">
+
+</head>
+
+<body>
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="minus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#9B2D30"
+                d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 32 32"
+>
+    <symbol id="globe-icon" viewBox="0 0 32 32">
+        <path
+                fill="#4A3F4F"
+                d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z">
+        </path>
+    </symbol>
+</svg>
+
+<svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="star-icon" viewBox="0 0 32 31">
+        <path d="M10.0431 24.5932L15.8898 21.0667L21.7365 24.6396L20.2052 17.9577L25.3559 13.5031L18.5811 12.8999L15.8898 6.58913L13.1985 12.8535L6.42371 13.4567L11.5744 17.9577L10.0431 24.5932ZM15.8898 25.4285L8.187 30.0687C7.84672 30.2853 7.49096 30.3781 7.11975 30.3471C6.74853 30.3162 6.42371 30.1925 6.1453 29.9759C5.86688 29.7594 5.65034 29.489 5.49566 29.1648C5.34099 28.8406 5.31005 28.4768 5.40286 28.0734L7.44456 19.3034L0.623417 13.4103C0.314068 13.1319 0.121034 12.8145 0.0443157 12.4581C-0.0324028 12.1017 -0.00951111 11.754 0.112991 11.415C0.235493 11.0759 0.421103 10.7975 0.669819 10.5797C0.918536 10.362 1.25882 10.2227 1.69067 10.1621L10.6927 9.37327L14.1729 1.11366C14.3276 0.742438 14.5676 0.464023 14.8931 0.278414C15.2185 0.0928044 15.5507 0 15.8898 0C16.2288 0 16.5611 0.0928044 16.8865 0.278414C17.2119 0.464023 17.452 0.742438 17.6067 1.11366L21.0869 9.37327L30.0889 10.1621C30.522 10.224 30.8623 10.3632 31.1098 10.5797C31.3572 10.7963 31.5428 11.0747 31.6666 11.415C31.7903 11.7553 31.8138 12.1036 31.7371 12.46C31.6604 12.8163 31.4667 13.1331 31.1562 13.4103L24.335 19.3034L26.3767 28.0734C26.4695 28.4756 26.4386 28.8394 26.2839 29.1648C26.1292 29.4902 25.9127 29.7606 25.6343 29.9759C25.3559 30.1912 25.0311 30.315 24.6598 30.3471C24.2886 30.3793 23.9329 30.2865 23.5926 30.0687L15.8898 25.4285Z" fill="#9B2D30"/>
+    </symbol>
+</svg>
+
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="plus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#9B2D30"
+                d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="33"
+        height="32"
+        viewBox="0 0 33 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="play-icon" viewBox="0 0 33 32">
+        <path
+                d="M16.8334 0.0786133C7.9606 0.0786133 0.767578 7.20678 0.767578 15.9998C0.767578 24.7929 7.9606 31.921 16.8334 31.921C25.7061 31.921 32.8992 24.7929 32.8992 15.9998C32.8992 7.20678 25.7061 0.0786133 16.8334 0.0786133ZM22.3861 16.8438L14.3532 21.8192C14.1907 21.9197 14.0059 21.9703 13.821 21.9703C13.6536 21.9703 13.4859 21.929 13.3342 21.8454C13.015 21.67 12.8169 21.3372 12.8169 20.9752V11.0244C12.8169 10.6625 13.015 10.3296 13.3342 10.1543C13.6533 9.97788 14.0436 9.98857 14.3532 10.1805L22.3861 15.1559C22.6796 15.3381 22.858 15.6568 22.858 15.9998C22.858 16.3428 22.6796 16.6616 22.3861 16.8438Z"
+                fill="#4A3F4F"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="information-outline" viewBox="0 0 20 20">
+        <path
+                d="M9 7H11V5H9V7ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 0C8.68678 0 7.38642 0.258658 6.17317 0.761205C4.95991 1.26375 3.85752 2.00035 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM9 15H11V9H9V15Z"
+                fill="#ffffff"
+        />
+    </symbol>
+</svg>
+
+<div class="wrapper">
+
+    <header class="header" id="top">
+        <div class="headerBlock">
+
+            <!-- Logo -->
+            <div class="headerLogoContainer">
+                <a href="https://onabet-online.com" aria-label="Main page">
+                    <img
+                            class="header__logo logo"
+                            src="_assets/images/1781505822-logo.svg"
+                            alt="Onabet"
+                    />
+                </a>
+            </div>
+
+            <div class="navBlockMain">
+
+            <!-- Main Navigation -->
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                </button>
+
+                <ul class="nav__list nav__list--header">
+
+                    <li><a href="index">index</a></li>
+                    <li><a href="app">App</a></li>
+                    <li><a href="bonuses">Bonuses</a></li>
+                    <li><a href="terms">Terms</a></li>
+                    <li><a href="privacy">Privacy</a></li>
+                    <li><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+                <!-- CTA buttons -->
+                <div class="btn__list">
+<!--                    <div class="nav__item">-->
+<!--                        <a-->
+<!--                                class="nav__link"-->
+<!--                                target="_blank"-->
+<!--                                href="casino.html?id=example-offer-id"-->
+<!--                                aria-label=""-->
+<!--                                id="navSignUp"-->
+<!--                        >-->
+<!--                            -->
+<!--                        </a>-->
+<!--                    </div>-->
+
+                    <div class="nav__item nav__itemLarge">
+                        <a
+                                class="nav__link nav__linkLarge"
+                                target="_blank"
+                                href="casino.html?id=example-offer-id"
+                                aria-label="Play Now"
+                                id="navPlayNow"
+                        >
+                            Play Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="heroContainer">
+            <div class="hero">
+                <div class="heroBlock block">
+                    <div class="heroGroup">
+                        <div class="heroTextGroup">
+                            <p class="heroText heroTextDesktop">Exclusive welcome offer of</p>
+                            <p class="heroText heroTextMobile">Exclusive welcome bonus of</p>
+                            <p class="heroText heroTextBonus" id="bonusText"></p>
+                        </div><a target="_blank" class="heroLink" id="bonusLink" href="/" aria-label="Play game"><span
+                            class="heroButton btn btn--large">Claim Bonus</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="heroUnder">
+                <h1 class="heroText heroMainTitle">Onabet Brazil – Premium Casino Entertainment and Sports Betting Platform</h1>
+            </div>
+        </section>
+        <div class="bonusesCircleContainer">
+            <section class="topCasino">
+                <div class="container">
+                    <div class="topCasinoBlock block">
+                        <h2 class="topCasinoTitle title"><span>Top Casinos <span id="countryName"></span></span>
+                        </h2>
+                        <div class="topCasinoGroup" id="casinoCardContainer">
+                            <!-- Casino cards will be dynamically inserted here --></div><button
+                            class="topCasinoButton btn btn--large" id="showMoreButton"> All Casino </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="advantagesCircleContainer">
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantagesBlock block">
+                        <div class="advantagesDescription">
+                            <h2 class="advantagesTitle title">Advantages</h2>
+                            <ul class="advantagesList">
+                                <li class="providersGroup"></li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Mobile Access</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">SSL Security</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Pix Payments</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Live Casino </p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Sports Betting</p>
+                                </li>
+                                <li class="providersGroup"></li>
+                            </ul><a class="advantagesLink" id="advantagesLink" target="_blank" href="/" aria-label="Know more"><span
+                                class="advantagesButton btn btn--large">Know more</span></a>
+                        </div>
+                        <div class="advantagesMobile">
+                            <h2 class="advantagesTitle title advantagesAppTitle">Onabet Mobile App</h2><img
+                                class="advantagesMobilePhone" src="_assets/images/1781506254-mobilke.webp" title="Onabet Mobile"
+                                alt="Onabet Mobile App" />
+                            <div class="advantagesStoreGroup"><a href="/" id="appStoreLink" aria-label="Play game"
+                                                                 target="_blank"><img class="advantagesStore" width="181" height="53"
+                                                                                      src="./assets/images/advantages/app-store.webp" alt="iOs App " title="Onabet Mobile App"/></a><a
+                                    href="/" id="googlePlayLink" aria-label="Play game" target="_blank"><img
+                                    class="advantagesStore" width="181" height="54"
+                                    src="./assets/images/advantages/google-play.webp" alt="android App Onabet Mobile App" title="Onabet Mobile App" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="games" id="games">
+                <div class="container">
+                    <div class="gamesBlock block">
+                        <h2 class="gamesTitle title"><span>Popular Games</span></h2>
+                        <div class="gamesGroup" id="gamesContainer"><!-- Games will be dynamically inserted here -->
+                        </div><a target="_blank" class="gamesLink" id="allGamesLink" href="/" aria-label="All Games"><span
+                            class="gamesButton btn btn--large">All Games</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">About the Casino</h2>
+                        <div class="historyGroup">
+                            <div class="historyColumn">
+                                <div class="historyText">
+                                    <p class="historyDescription">At Onabet, we are committed to delivering a modern and engaging gaming environment that combines casino entertainment and sports betting within a single platform. Our goal is to provide our guests with convenient access to a wide variety of entertainment options while maintaining a secure and user-friendly experience. Through continuous platform development and intuitive navigation, we strive to create an environment where players can easily enjoy their favorite activities.</p>
+                                    <ul class="historyList">
+                                        <li class="historyItem">Onabet combines casino gaming and sports betting within one platform.</li>
+                                        <li class="historyItem">The platform is optimized for both Android and iOS mobile devices.</li>
+                                        <li class="historyItem">Pix is available as one of the supported payment solutions.</li>
+                                    </ul>
+                                    <p class="historyDescription">Our casino features a diverse collection of gaming opportunities, including popular casino categories and live dealer experiences. We focus on providing an immersive atmosphere where our guests can enjoy interactive entertainment powered by leading gaming technologies. By bringing multiple forms of entertainment together, we offer a comprehensive destination for players looking for both casino gaming and sports betting opportunities.</p>
+                                </div>
+                            </div>
+                            <div class="historyColumn"><img class="historyImage"
+                                                            src="_assets/images/1781506299-desktop.webp" alt="Onabet" title="Onabet Desktop"/></div>
+                        </div>
+                        <p class="historyDescription">Accessibility is an important part of our service philosophy. Our platform is optimized for mobile devices, allowing our guests to access casino games, sports betting markets, account management tools, and platform features directly from compatible Android and iOS devices. This mobile-friendly approach ensures a smooth experience across different screen sizes and operating systems.
+
+Security remains one of our highest priorities. We utilize SSL encryption technology to help protect personal information and support secure transactions across the platform. Combined with convenient payment options such as Pix, our security infrastructure helps create a reliable environment where our guests can focus on enjoying the entertainment and betting opportunities available through Onabet.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Onabet Casino: 24/7 Online Gaming, Live Tables and Digital Entertainment</h2>
+                        <div class="historyDescription">
+<p>
+Onabet is our online casino designed for players who want a fast, modern and flexible gaming experience in one digital destination. We bring together online slots, live dealer tables, instant games, jackpot titles and sports betting in a smooth platform that is available around the clock. Our atmosphere is built around convenience, energy and variety, with live casino rooms, themed promotions, tournaments and seasonal events keeping the experience fresh every day. Instead of a traditional land-based floor, we offer a mobile-first casino lobby that lets players enjoy games from a phone, tablet or desktop. Our entertainment zones include live roulette, blackjack, baccarat, game shows, crash games, video poker and quick-play titles. Onabet also features regular bonus drops, cashback offers, free spins campaigns and VIP-style rewards for active players. The live casino section recreates the feel of a real gaming room with professional dealers and interactive tables. Slot fans can explore classic reels, Megaways-style games, bonus-buy titles and progressive jackpots. Sports bettors can move easily between casino play and event markets without leaving the platform. Our loyalty experience rewards regular activity with stronger offers, personalized promotions and more value over time.
+</p>
+<br>
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    <tr>
+      <th style="width:38%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Zone
+      </th>
+      <th style="width:62%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Days and Hours
+      </th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Slots and jackpot games
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Live dealer casino
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        RNG table games
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Sports betting area
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, according to event schedules
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Promotions and tournaments
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily or during active campaigns
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Onabet Casino Support, Languages, Payments and Withdrawals
+</h3>
+<p>
+At Onabet, we build our service around speed, clarity and player confidence. Our support team assists with account access, verification, deposits, withdrawals, bonus activation, game rules and responsible gaming tools. Players can reach us through convenient online channels such as live chat, email and the help center. We aim to keep every interaction simple, accurate and useful, whether a player is making a first deposit or checking the status of a payout.
+</p>
+<p>
+Onabet is designed for an international online audience, so our communication style is clear, practical and easy to follow. The platform structure helps players move smoothly between registration, cashier options, casino games, sports markets and promotional pages. Our support approach focuses on direct guidance, especially for payments, bonuses and account security. This makes the experience comfortable for both new casino players and experienced users who want a fast digital gaming environment.
+</p>
+<p>
+Our cashier supports widely used payment options such as bank cards, bank transfers, e-wallets and selected local payment methods when they are available in the player account. Certain profiles may also see crypto-friendly options if supported by the cashier and account settings. Since Onabet operates online, physical ATMs and currency exchange counters are replaced by a secure digital cashier where deposits and withdrawals are managed directly. We focus on fast deposits, protected transactions and easy balance control from the account dashboard.
+</p>
+<p>
+Withdrawals at Onabet are requested through the cashier after logging in and selecting an available payout method. For player protection, we may request standard identity verification, payment confirmation or profile checks before releasing funds. In many cases, payouts are processed through the same or compatible method used for deposits, depending on cashier rules and account status. Tax treatment can depend on a player’s personal circumstances and the nature of the activity, so professional tax guidance is recommended when individual clarification is needed.
+</p>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Onabet Casino Access Rules, Player Guidelines and Online Entry
+</h3>
+<p>
+Onabet operates as an online casino, so our access rules are focused on secure digital play rather than physical entry to a gaming floor. Players can visit our casino from a desktop, smartphone or tablet and enjoy games through a personal account. Registration requires meeting the applicable age requirement and providing accurate personal information. We support responsible gaming and offer tools that help players manage their activity. A dress code is not needed in an online environment, but account security and fair use of the platform are essential. Players should use their own payment methods and complete verification when requested. Multiple accounts, shared access and bonus misuse are not allowed because we keep the experience fair for everyone. Games are available after login through the casino lobby, live casino area or sportsbook section. Parking and transport are not required because Onabet is available online. Players can reach our casino in seconds through a browser or mobile device at any time.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Access Conditions
+</h3>
+ <ul>
+            <li>• Registration is available to players who meet the age requirement and accept Onabet rules.</li>
+            <li>• A personal account is required to play, claim bonuses and manage payments.</li>
+            <li>• Each player should use one account so rewards, limits and withdrawals remain accurate.</li>
+            <li>• Casino games, live tables and sports markets become available after login.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Security Guidelines
+</h3>
+ <ul>
+            <li>• We recommend using a strong password and keeping account details private.</li>
+            <li>• Payment methods should belong to the account holder for smoother deposits and withdrawals.</li>
+            <li>• Verification protects balances, winnings and personal data.</li>
+            <li>• Responsible gaming tools help players set limits and maintain control.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+How to Reach Onabet
+</h3>
+ <ul>
+            <li>• Open our casino through a mobile or desktop browser.</li>
+            <li>• Log in, visit the cashier and choose your preferred gaming section.</li>
+            <li>• No parking, travel time or physical check-in is required.</li>
+            <li>• Onabet is available 24/7 for slots, live casino and sports betting.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Onabet Casino Loyalty Program and VIP Rewards
+</h3>
+<p>
+At Onabet, our loyalty experience is built for players who want more value from regular play. We reward casino activity, promotional participation, sports betting engagement and return visits to favorite games. Members may receive personal offers, cashback, free spins, reload bonuses, higher limits and access to exclusive campaigns. The more consistently players explore Onabet, the more tailored their rewards can become. Registration is simple and may begin automatically after account creation or through an available promotion in the player profile. We keep the structure easy to follow: deposit, play eligible games and receive rewards according to the offer terms. Our VIP approach allows active players to unlock more personal treatment and stronger promotional value. Deposits, gameplay volume, tournament activity and account history can all influence reward access. Available bonuses may appear in the account dashboard, promotion page or personal notifications. Onabet loyalty is designed to feel flexible, rewarding and easy to use.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Registration Conditions
+</h3>
+ <ul>
+            <li>• Create an Onabet account through the registration form.</li>
+            <li>• Confirm profile details when verification is requested.</li>
+            <li>• Make a qualifying deposit using an available cashier method.</li>
+            <li>• Activate a promotion manually or join automatically when the offer appears in the account.</li>
+            <li>• Follow bonus rules, including wagering, expiry dates and eligible games.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Levels and How to Reach Them
+</h3>
+ <ul>
+            <li>• Start — entry level after registration with access to welcome promotions.</li>
+            <li>• Active — for regular players, with reload bonuses up to 100% and free spins opportunities.</li>
+            <li>• Plus — for consistent play, with cashback offers that may reach 10–15% in selected campaigns.</li>
+            <li>• VIP — for highly active players, with personal offers, enhanced limits and priority-style support.</li>
+            <li>• Elite — premium reward access with exclusive tournaments, larger cashback options and tailored bonuses.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Available Rewards
+</h3>
+ <ul>
+            <li>• Welcome bonus — up to 125% on the first deposit, with examples reaching CAD 680 during active offers.</li>
+            <li>• Reload bonus — up to 100% on selected repeat deposits.</li>
+            <li>• Free spins — packages from 25 to 100 spins on featured slot titles.</li>
+            <li>• Cashback — selected casino or live casino offers may return 15–25%.</li>
+            <li>• Tournament prizes — prize pools may range from 500 to 10,000 depending on the campaign.</li>
+            <li>• VIP rewards — personal bonuses, stronger limits and exclusive promotional access.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="">
+            <div class="container">
+                <div class="sprovidersBlock block">
+                    <h2 class="sprovidersTitle title"> Software Providers </h2>
+                    <div class="sprovidersGroup" id="providersContainer">
+                        <!-- Provider images will be dynamically inserted here --></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Onabet Casino Bonuses, Prizes and Special Offers</h2>
+                        <div class="historyDescription">
+<p>
+Onabet regularly introduces promotional offers that make casino play more exciting and rewarding. Beyond the loyalty program, players can find welcome bonuses, free spins, reload deals, cashback, live casino campaigns and themed events. We update our promotions area so players can discover new value across slots, table games, live dealer rooms and sports betting. Welcome offers help new players start with a boosted balance. Free spins create extra chances on selected slot titles without paying for every spin. Cashback promotions return part of qualifying losses in selected campaigns. Live casino offers are ideal for players who enjoy roulette, blackjack, baccarat and game shows. Tournaments add a competitive edge with leaderboards and prize pools. Seasonal events may be connected to holidays, weekends, major sports moments or new game releases. We keep our bonus experience varied, clear and engaging.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Casino Bonuses
+</h3>
+ <ul>
+            <li>• Welcome bonus — up to 125% on a deposit, with examples reaching CAD 680 in active campaigns.</li>
+            <li>• Reload bonus — up to 100% on selected repeat deposits.</li>
+            <li>• Free spins — 25, 50 or 100 spins on featured slots.</li>
+            <li>• Slot boost — enhanced promotional value for selected slot titles.</li>
+            <li>• Bonus drop — time-limited extra casino funds during special campaigns.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Live Casino and Tournaments
+</h3>
+ <ul>
+            <li>• Live cashback — up to 25% back on live casino play, with examples up to CAD 499.</li>
+            <li>• Blackjack promotion — special rewards for selected live blackjack tables.</li>
+            <li>• Roulette challenge — tournament points for qualifying roulette play.</li>
+            <li>• Leaderboard prizes — prize pools may range from 1,000 to 10,000 depending on the event.</li>
+            <li>• Game show rewards — extra value for selected live game show formats.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Seasonal Events
+</h3>
+ <ul>
+            <li>• Weekend boost — stronger offers during Friday, Saturday and Sunday campaigns.</li>
+            <li>• Holiday spins — free spins connected to festive promotions.</li>
+            <li>• New game launch — rewards for trying fresh slot releases.</li>
+            <li>• Sports and casino combo — offers for players who enjoy both betting and casino games.</li>
+            <li>• Cashback week — a weekly event returning part of qualifying losses.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Onabet Casino Popular Games and Gaming Categories
+</h3>
+<p>
+Onabet brings the most popular online casino categories into one easy-to-use lobby. We offer slots, live casino, roulette, blackjack, baccarat, video poker, jackpot games, crash games, keno, bingo and instant-win titles. Players can choose classic reels, modern video slots, bonus mechanics and progressive jackpot formats. In the live casino section, we recreate the atmosphere of a real table with professional dealers and interactive betting. Roulette is ideal for players who enjoy simple rules and fast rounds. Blackjack attracts players who like strategy, decision-making and card-based action. Baccarat remains popular thanks to its elegant pace and straightforward betting structure. Crash games are built for players who enjoy quick results and multiplier-based excitement. Video poker blends slot-style speed with poker-hand logic. We refresh our game selection so players can discover new experiences while returning to favorite titles.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Slots
+</h3>
+ <ul>
+            <li>• Classic slots — simple reel games with clear paylines and traditional symbols.</li>
+            <li>• Video slots — modern titles with wilds, scatters, free spins and bonus rounds.</li>
+            <li>• Megaways-style slots — dynamic games with thousands of possible combinations.</li>
+            <li>• Jackpot slots — prize-focused games with large payouts and progressive potential.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Live Casino
+</h3>
+ <ul>
+            <li>• Live roulette — real-time roulette with professional dealers and multiple table styles.</li>
+            <li>• Live blackjack — a strategic card game with decisions on every hand.</li>
+            <li>• Live baccarat — a fast, elegant format with Player, Banker and Tie options.</li>
+            <li>• Game shows — interactive live games with wheels, multipliers and bonus stages.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Fast and Table Games
+</h3>
+ <ul>
+            <li>• Crash games — multiplier-based rounds where timing creates the excitement.</li>
+            <li>• Video poker — quick poker-style play with familiar hand rankings.</li>
+            <li>• Keno — a number-pick format with fast results.</li>
+            <li>• Scratch cards — instant games with simple rules and quick outcomes.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Onabet Casino Minimum and Maximum Bets by Game Type
+</h3>
+<p>
+At Onabet, we offer flexible betting limits so players can choose a comfortable pace and style of play. Minimum and maximum bets may vary by game provider, account currency, selected table and active promotion. Live casino limits are usually set by table type, while slot limits depend on coin value, paylines and game mechanics. The current limits are always shown inside the selected game before play begins.
+</p>
+<br>
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    <tr>
+      <th style="width:38%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Game or Zone
+      </th>
+      <th style="width:62%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Minimum and Maximum Bet
+      </th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Classic slots</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">0.10 to 50</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Video slots</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">0.20 to 100</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Jackpot slots</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">0.25 to 250</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Live roulette</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">1 to 5,000</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Live blackjack</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">5 to 10,000</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Live baccarat</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">5 to 20,000</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Crash games</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">0.10 to 1,000</td>
+    </tr>
+  </table>
+</div>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Onabet Casino Events, Tournaments and Live Entertainment
+</h3>
+<p>
+Onabet creates a full online entertainment calendar where every player can find an engaging format. We combine casino games, live dealer tables, tournaments, seasonal promotions, sports events and themed gaming weeks. Regular entertainment includes slot tournaments, leaderboard challenges, cashback days, live casino promotions and weekend boosts. These events give players more reasons to return to favorite games and discover new titles with extra rewards.
+</p>
+<p>
+The live casino area is one of our strongest entertainment spaces. Professional dealers, interactive chat, fast rounds and varied limits create an immersive table experience. Instead of a physical nightclub, we deliver a digital evening entertainment format with live shows, hosted roulette, game show titles, themed tables and night-focused promotions. This gives players the energy of a club-style experience without travel, queues or fixed opening hours.
+</p>
+<p>
+Seasonal events at Onabet may be connected to holidays, sports finals, new slot launches and major promotional weeks. We use formats such as free spins drops, cashback weeks, prize races and special missions. Players can complete campaign requirements, collect points, climb leaderboards and compete for additional prizes. This turns regular play into a calendar of rewarding moments with clear goals and exciting benefits.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Onabet Entertainment
+</h3>
+ <ul>
+            <li>• Slot tournaments — slot competitions with leaderboards and prize pools.</li>
+            <li>• Live casino nights — evening promotions for roulette, blackjack, baccarat and game shows.</li>
+            <li>• Weekend boost — enhanced offers during weekend campaigns.</li>
+            <li>• Cashback days — selected events returning part of qualifying losses.</li>
+            <li>• Free spins drops — extra spins on featured slot games.</li>
+            <li>• Sports event specials — promotions connected to major matches and tournaments.</li>
+            <li>• New game missions — rewards for trying newly released titles.</li>
+            <li>• Game show events — interactive live formats with multipliers and bonus rounds.</li>
+        </ul><br><h3 style = "font-weight: bold;font-size: 32px;">
+Onabet Casino Bars, Dining, Relaxation and Digital Comfort
+</h3>
+<p>
+Onabet operates online, so relaxation with us is built around convenience, speed and freedom of choice. We do not limit players to a physical floor, restaurant schedule or hotel booking. Instead, our casino offers a digital space where players can move between slots, live casino, sports betting, tournaments and promotions at any time. This format is ideal for players who value accessibility and want a premium gaming experience without travel.
+</p>
+<p>
+Our live sections, evening promotions, game show titles and themed offers create the role of digital bars and lounge areas. A player can enter the live casino, choose roulette or blackjack with a dealer and enjoy the atmosphere of a real gaming room. For a calmer experience, slots, keno, video poker and instant games are always available. For a faster rhythm, crash games, tournaments and sports events add more energy.
+</p>
+<p>
+The hotel-style experience at Onabet is replaced by mobile freedom. Players do not need to plan a trip, search for parking or follow a venue schedule. The account dashboard gives access to balance, bonuses, payment history, games and active promotions. We make casino leisure flexible, modern and personal.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Onabet Relaxation Areas
+</h3>
+ <ul>
+            <li>• Live casino lounge — dealer tables with interactive atmosphere and fast access.</li>
+            <li>• Slot lobby — a selection of slots, jackpot games and bonus-feature titles.</li>
+            <li>• Sports zone — betting markets for major sporting events.</li>
+            <li>• Game show area — hosted live entertainment with multipliers and bonus rounds.</li>
+            <li>• Promo room — free spins, cashback, tournaments and special offers.</li>
+            <li>• Mobile lounge — 24/7 casino access from a phone or tablet.</li>
+            <li>• VIP area — personal offers and enhanced rewards for active players.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faqBlock block">
+                    <h2 class="faqTitle title"><span>Frequently Asked Questions</span></h2>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="can_i_make_deposits_online"/><label
+                            class="faqLabel" for="can_i_make_deposits_online">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Can I make deposits online? </span></label>
+                        <div class="faqContent">
+                            <p>Yes, deposits can be completed through supported payment methods.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="are_withdrawals_available"/><label
+                            class="faqLabel" for="are_withdrawals_available">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Are withdrawals available? </span></label>
+                        <div class="faqContent">
+                            <p>Yes, eligible users can request withdrawals according to platform procedures.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="is_my_personal_information_protected"/><label
+                            class="faqLabel" for="is_my_personal_information_protected">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Is my personal information protected? </span></label>
+                        <div class="faqContent">
+                            <p>Yes, we use SSL encryption technology to help safeguard user data.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="does_onabet_provide_customer_support"/><label
+                            class="faqLabel" for="does_onabet_provide_customer_support">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Does Onabet provide customer support? </span></label>
+                        <div class="faqContent">
+                            <p>Yes, support services are available to assist our guests.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="can_i_access_my_account_from_different_devices"/><label
+                            class="faqLabel" for="can_i_access_my_account_from_different_devices">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Can I access my account from different devices? </span></label>
+                        <div class="faqContent">
+                            <p>Yes, you can access your account from compatible desktop and mobile devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footerTop">
+            <div class="footerLogoContainer"><a href="https://onabet-online.com" aria-label="Main page"><img class="footer__logo"
+                                                                                                     src="_assets/images/1781505831-logo.svg" alt="" width="140"
+                                                                                                     height="48" /></a></div>
+            <div class="footerPay">
+                <div class="payBlock"><img class="payElementGrey"
+                                           src="./assets/images/footer/payment/masterCard.svg" alt="MasterCard" /><img
+                        class="payElementColor" src="./assets/images/footer/payment/masterCard--color.svg"
+                        alt="MasterCard" title="MasterCard in Onabet" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/visa.svg"
+                                           alt="Visa" /><img class="payElementColor"
+                                                             src="./assets/images/footer/payment/visa--color.svg" alt="Visa" title="Visa in Onabet" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/neteller.svg"
+                                           alt="Neteller" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/neteller--color.svg" alt="Neteller" title="Neteller in Onabet" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/skrill.svg"
+                                           alt="Skrill" /><img class="payElementColor"
+                                                               src="./assets/images/footer/payment/skrill--color.svg" alt="Skrill" title="Skrill in Onabet" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/bitcoin.svg"
+                                           alt="Bitcoin" /><img class="payElementColor"
+                                                                src="./assets/images/footer/payment/bitcoin--color.svg" alt="Bitcoin" title="Bitcoin in Onabet" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/litecoin.svg"
+                                           alt="Litecoin" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/litecoin--color.svg" alt="Litecoin" title="Litecoin in Onabet" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/ethereum.svg"
+                                           alt="Etherium" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/ethereum--color.svg" alt="Etherium" title="Etherium in Onabet" /></div>
+            </div>
+        </div>
+        <div class="footerMiddle">
+            <div class="footerOperator">
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gpwa.svg" alt="GPWA" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gpwa--color.svg"
+                        alt="GPWA" title="GPWA in Onabet" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambleaware.svg" alt="Gamble Aware" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gambleaware--color.svg"
+                        alt="Gamble Aware" title="Gamble Aware in Onabet" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamcare.svg" alt="Game care" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamcare--color.svg"
+                        alt="Game care" title="Game care in Onabet" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambling-therapy.svg" alt="Gambling Therapy" /><img
+                        class="operatorElementColor"
+                        src="./assets/images/footer/operator/gambling-therapy--color.svg" alt="Gambling Therapy" title="Gambling Therapy in Onabet" />
+                </div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamban.svg" alt="Gamban" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamban--color.svg"
+                        alt="Gamban" title="Gamban in Onabet" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/betblocker.svg" alt="BetBlocker" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/betblocker--color.svg"
+                        alt="BetBlocker" title="BetBlocker in Onabet" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/itech_labs.svg" alt="ITech Labs" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/itech_labs--color.svg"
+                        alt="ITech Labs" title="ITech Labs in Onabet" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/ecogra.svg" alt="Ecogra" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/ecogra--color.svg"
+                        alt="Ecogra" title="Ecogra in Onabet" /></div>
+            </div>
+        </div>
+        <div class="footerNavBlock">
+            <nav>
+                <ul class="nav__list--footer">
+                    <li class="footer__navItem"><a href="index">index</a></li>
+                    <li class="footer__navItem"><a href="app">App</a></li>
+                    <li class="footer__navItem"><a href="bonuses">Bonuses</a></li>
+                    <li class="footer__navItem"><a href="terms">Terms</a></li>
+                    <li class="footer__navItem"><a href="privacy">Privacy</a></li>
+                    <li class="footer__navItem"><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomGroup">
+                <p class="footerBottomAge">18+</p>
+                <p class="footerBottomCopyright">Copyright © <span class="js-current-year"></span> Onabet </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var playButtonName = "#play-icon";
+    var informationOutlineName =
+        "#information-outline";
+    var topCasinoButtonText = "Claim Bonus";
+    var welcomeBonusText = "Welcome bonus";
+    var bonusDetailsButtonText = "";
+    var playNowText = "Play now";
+    var maximumAmountText = "";
+    var wagerText = "";
+    var bonusCodeText = "";
+    var depositText = "";
+    var casinoName = "Onabet";
+</script>
+
+</body>
+</html>
